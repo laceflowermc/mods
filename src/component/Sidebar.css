@@ -1,0 +1,22 @@
+.Sidebar {
+  display: flex;
+  width: 250px;
+  height: calc(100vh - 70px);
+  background-color: #383838;
+  text-transform: uppercase;
+  border-top: 1px solid #696969;
+}
+
+.Sidebar-header {
+  display: flex;
+	cursor: pointer;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+	font-size: 2em;
+  background-color: #494949;
+}
+
+.Sidebar-header div {
+  margin: auto;
+}

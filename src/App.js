@@ -1,14 +1,15 @@
 import React from 'react'
 import Header from './component/Header'
-import logo from './logo.svg'
+import Sidebar from './component/Sidebar'
 import './App.css'
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Sidebar />
       <div className="Content">
-
+        Content
       </div>
     </div>
   )

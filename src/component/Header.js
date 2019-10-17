@@ -9,10 +9,10 @@ function Header(props) {
 			</div>
 			<div className="Header-nav">
 				<div className="Header-nav-item">
-					<a href="https://www.curseforge.com/members/blakebr0/projects" target="_blank">CurseForge</a>
+					<a href="https://www.curseforge.com/members/blakebr0/projects" target="_blank" rel="noopener noreferrer">CurseForge</a>
 				</div>
 				<div className="Header-nav-item">
-					<a href="https://github.com/BlakeBr0" target="_blank">Github</a>
+					<a href="https://github.com/BlakeBr0" target="_blank" rel="noopener noreferrer">Github</a>
 				</div>
 			</div>
 		</div>
