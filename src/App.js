@@ -1,24 +1,9 @@
 import React from 'react'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 import Header from './component/Header'
 import Sidebar from './component/Sidebar'
-import Home from './page/Home'
-import MysticalAgriculture from './page/MysticalAgriculture'
-import { HashRouter, Switch, Route } from "react-router-dom"
+import { routes } from './routes'
 import './App.css'
-
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    exact: true,
-    component: () => <Home />
-  },
-  {
-    path: '/mystical-agriculture',
-    name: 'Mystical Agriculture',
-    component: () => <MysticalAgriculture />
-  }
-]
 
 function App() {
   return (
