@@ -3,12 +3,7 @@ import Header from './component/Header'
 import Sidebar from './component/Sidebar'
 import Home from './page/Home'
 import MysticalAgriculture from './page/MysticalAgriculture'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import './App.css'
 
 const routes = [
@@ -24,6 +19,10 @@ const routes = [
     component: () => <MysticalAgriculture />
   }
 ]
+
+routes.forEach(route => {
+  route.path = `/mods${route.path}`
+})
 
 function App() {
   return (
