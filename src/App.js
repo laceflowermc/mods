@@ -5,27 +5,29 @@ import Sidebar from './component/Sidebar'
 import { routes } from './routes'
 import './App.css'
 
-function App() {
-  return (
-    <HashRouter basename="/">
-      <div className="App">
-        <Header />
-        <Sidebar routes={routes} />
-        <div className="Content">
-          <Switch>
-            {routes.map((route, index) => (
-              <Route
-                key={index}
-                exact={route.exact}
-                path={route.path}
-                children={route.component}
-              />
-            ))}
-          </Switch>
+class App extends React.Component {
+  render() {
+    return (
+      <HashRouter basename="/">
+        <div className="App">
+          <Header routes={routes} />
+          <Sidebar routes={routes} />
+          <div className="Content">
+            <Switch>
+              {routes.map((route, index) => (
+                <Route
+                  key={index}
+                  exact={route.exact}
+                  path={route.path}
+                  children={route.component}
+                />
+              ))}
+            </Switch>
+          </div>
         </div>
-      </div>
-    </HashRouter>
-  )
+      </HashRouter>
+    )
+  }
 }
 
 export default App
