@@ -3,7 +3,7 @@ import Header from './component/Header'
 import Sidebar from './component/Sidebar'
 import Home from './page/Home'
 import MysticalAgriculture from './page/MysticalAgriculture'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { HashRouter, Switch, Route } from "react-router-dom"
 import './App.css'
 
 const routes = [
@@ -20,13 +20,9 @@ const routes = [
   }
 ]
 
-routes.forEach(route => {
-  route.path = `/mods${route.path}`
-})
-
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <div className="App">
         <Header />
         <Sidebar routes={routes} />
@@ -43,7 +39,7 @@ function App() {
           </Switch>
         </div>
       </div>
-    </Router>
+    </HashRouter>
   )
 }
 
