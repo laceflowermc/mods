@@ -25,6 +25,14 @@
   position: relative;
 }
 
+.Sidebar-route-wrapper.active {
+  pointer-events: none;
+}
+
+.Sidebar-route-wrapper.active .Sidebar-route {
+  background-color: #888888;
+}
+
 .Sidebar-route {
   display: flex;
 	cursor: pointer;

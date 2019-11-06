@@ -1,7 +1,7 @@
 .Header {
 	display: flex;
 	height: 70px;
-	padding: 0 20px;
+	padding: 0 40px;
 	background-color: #383838;
 	text-transform: uppercase;
 	flex-direction: row;
@@ -38,9 +38,18 @@
 	background-color: #4e4e4e;
 }
 
-.Header-nav-item a {
+.Header-nav-item-content {
 	display: block;
 	margin: auto;
 	color: #e4e4e4;
 	text-decoration: none;
+}
+
+.Header-nav-item-mods-dropdown {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 70px;
+	right: 100px;
+	background-color: #383838;
 }
