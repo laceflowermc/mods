@@ -19,41 +19,49 @@ const routes = [
   {
     path: '/mystical-agriculture',
     name: 'Mystical Agriculture',
+    icon: 'img/mysticalagriculture-icon.png',
     component: () => <MysticalAgriculture />
   },
   {
     path: '/mystical-agradditions',
     name: 'Mystical Agradditions',
+    icon: 'img/mysticalagradditions-icon.png',
     component: () => <MysticalAgradditions />
   },
   {
     path: '/mystical-plantations',
     name: 'Mystical Plantations',
+    icon: 'logo512.png',
     component: () => <MysticalPlantations />
   },
   {
     path: '/extended-crafting',
     name: 'Extended Crafting',
+    icon: 'img/extendedcrafting-icon.png',
     component: () => <ExtendedCrafting />
   },
   {
     path: '/pickle-tweaks',
     name: 'Pickle Tweaks',
+    icon: 'img/pickletweaks-icon.png',
     component: () => <PickleTweaks />
   },
   {
     path: '/iron-jetpacks',
     name: 'Iron Jetpacks',
+    icon: 'img/ironjetpacks-icon.png',
     component: () => <IronJetpacks />
   },
   {
     path: '/more-buckets',
     name: 'More Buckets',
+    icon: 'img/morebuckets-icon.png',
     component: () => <MoreBuckets />
   },
   {
     path: '/cucumber',
-    name: 'Cucumber',
+    name: 'Cucumber Library',
+    icon: 'img/cucumber-icon.png',
     component: () => <Cucumber />
   }
 ]

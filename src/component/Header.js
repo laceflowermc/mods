@@ -5,6 +5,17 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
 
 class Header extends React.Component {
+	constructor(props) {
+		super(props)
+		this.state = {
+			modsActive: false
+		}
+	}
+
+	setModsActive(active) {
+		this.setState({ modsActive: active })
+	}
+
 	render() {
 		return (
 			<div className="Header">
@@ -16,8 +27,12 @@ class Header extends React.Component {
 						<div className="Header-nav-item-content">Mods <FontAwesomeIcon icon={faChevronDown} /></div>
 						<div className="Header-nav-item-mods-dropdown">
 							{this.props.routes.slice(1).map((route, index) => (
-								<NavLink to={route.path} className="Header-nav-item-mods-dropdown-mod" key={index}>
-									<div>{route.name}</div>
+								<NavLink 
+									key={index}
+									to={route.path} 
+									className="Header-nav-item-mods-dropdown-mod" 
+								>
+									<img src={route.icon} alt={route.name} /><div>{route.name}</div>
 								</NavLink>
 							))}
 						</div>
