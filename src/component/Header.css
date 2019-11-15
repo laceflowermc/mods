@@ -18,6 +18,17 @@
 	margin: auto;
 }
 
+.Header-title-link {
+	display: block;
+	margin: auto;
+	color: #e4e4e4;
+	text-decoration: none;
+}
+
+.Header-title-link.active {
+	pointer-events: none;
+}
+
 .Header-nav {
 	display: flex;
 	height: 100%;

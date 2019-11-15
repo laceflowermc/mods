@@ -11,14 +11,23 @@ class App extends React.Component {
       <HashRouter basename="/">
         <div className="App">
           <Header routes={routes} />
-          <Sidebar routes={routes} />
+          <Switch>
+            {routes.map((route, index) => (
+              <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                children={<Sidebar path={route.path} />}
+              />
+            ))}
+          </Switch>
           <div className="Content">
             <Switch>
               {routes.map((route, index) => (
                 <Route
                   key={index}
-                  exact={route.exact}
                   path={route.path}
+                  exact={route.exact}
                   children={route.component}
                 />
               ))}

@@ -23,6 +23,8 @@
 
 .Sidebar-route-wrapper {
   position: relative;
+  color: #e4e4e4;
+	text-decoration: none;
 }
 
 .Sidebar-route-wrapper.active {
