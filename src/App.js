@@ -3,13 +3,13 @@ import { HashRouter, Switch, Route } from 'react-router-dom'
 import Header from './component/Header'
 import Sidebar from './component/Sidebar'
 import { routes } from './routes'
-import './App.css'
+import './App.scss'
 
 class App extends React.Component {
   render() {
     return (
       <HashRouter basename="/">
-        <div className="App">
+        <div id="App">
           <Header routes={routes} />
           <Switch>
             {routes.map((route, index) => (
@@ -21,7 +21,7 @@ class App extends React.Component {
               />
             ))}
           </Switch>
-          <div className="Content">
+          <div id="Content">
             <Switch>
               {routes.map((route, index) => (
                 <Route
