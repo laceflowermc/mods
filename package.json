@@ -2,7 +2,7 @@
   "name": "mods-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://blakebr0.github.io/mods",
+  "homepage": "http://mods.blakebr0.com",
   "dependencies": {
     "@babel/core": "7.6.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",

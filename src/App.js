@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './component/Header'
 import Sidebar from './component/Sidebar'
 import { routes } from './routes'
@@ -8,8 +8,8 @@ import './App.scss'
 class App extends React.Component {
   render() {
     return (
-      <HashRouter basename="/">
-        <div id="App">
+      <Router>
+        <div id="app">
           <Header routes={routes} />
           <Switch>
             {routes.map((route, index) => (
@@ -21,7 +21,7 @@ class App extends React.Component {
               />
             ))}
           </Switch>
-          <div id="Content">
+          <div id="content">
             <Switch>
               {routes.map((route, index) => (
                 <Route
@@ -34,7 +34,7 @@ class App extends React.Component {
             </Switch>
           </div>
         </div>
-      </HashRouter>
+      </Router>
     )
   }
 }
