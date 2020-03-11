@@ -22,7 +22,7 @@
 
 const siteConfig = {
   title: 'Blake\'s Mods', // Title for your website.
-  tagline: '',
+  tagline: 'Official Site',
   url: 'https://blakebr0.github.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -38,10 +38,11 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: 'doc1', label: 'Docs' },
-    { doc: 'doc4', label: 'API' },
-    { page: 'help', label: 'Help' },
+    { page: 'mods', label: 'Mods' },
+    { doc: 'mysticalagriculture', label: 'Documentation' },
     { blog: true, label: 'Blog' },
+    { href: 'https://github.com/BlakeBr0', label: 'GitHub', external: true },
+    { href: 'https://www.curseforge.com/members/blakebr0/projects', label: 'CurseForge', external: true }
   ],
 
   // If you have users set above, you add it here:
@@ -49,13 +50,13 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
+  // footerIcon: 'img/favicon.ico',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#434b55',
-    secondaryColor: '#2e343b',
+    primaryColor: '#995a5a',
+    secondaryColor: '#733535',
   },
 
   /* Custom fonts for website */
@@ -81,7 +82,13 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+    'https://buttons.github.io/buttons.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+    '/js/code-block-buttons.js',
+  ],
+
+  stylesheets: ['/css/code-block-buttons.css'],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
@@ -94,7 +101,7 @@ const siteConfig = {
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
-  // docsSideNavCollapsible: true,
+  docsSideNavCollapsible: true,
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
@@ -104,7 +111,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+  repoUrl: 'https://github.com/BlakeBr0/mods',
 
   cname: 'mods.blakebr0.com'
 };

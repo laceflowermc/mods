@@ -1,10 +1,31 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "Mystical Agriculture": [
+      "mysticalagriculture",
+      {
+        "type": "subcategory",
+        "label": "Crafting Recipes",
+        "ids": [
+          "mysticalagriculture/test"
+        ]
+      }
+    ],
+    "Extended Crafting": [
+      "extendedcrafting",
+      {
+        "type": "subcategory",
+        "label": "Crafting Recipes",
+        "ids": [
+          "doc1",
+          "doc2"
+        ]
+      }
+    ],
+    "Iron Jetpacks": [
+      "ironjetpacks"
+    ],
+    "Cucumber Library": [
+      "cucumberlibrary"
+    ]
   }
 }

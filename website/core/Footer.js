@@ -25,7 +25,7 @@ class Footer extends React.Component {
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
-          <a href={this.props.config.baseUrl} className="nav-home">
+          {/* <a href={this.props.config.baseUrl} className="nav-home">
             {this.props.config.footerIcon && (
               <img
                 src={this.props.config.baseUrl + this.props.config.footerIcon}
@@ -34,42 +34,87 @@ class Footer extends React.Component {
                 height="58"
               />
             )}
-          </a>
+          </a> */}
           <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+            <h5>Navigation</h5>
+            <a href={this.pageUrl('mods', this.props.language)}>
+              Mods
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
+            <a href={this.docUrl('mysticalagriculture', this.props.language)}>
+              Documentation
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href={this.props.config.baseUrl + 'blog'}>
+              Blog
             </a>
           </div>
           <div>
-            <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>
-              User Showcase
-            </a>
-            <a
-              href="https://stackoverflow.com/questions/tagged/"
+            <h5>Mods</h5>
+            <a 
+              href="https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture"
               target="_blank"
-              rel="noreferrer noopener">
-              Stack Overflow
+              rel="norefferer noopener"
+            >
+              Mystical Agriculture
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
-            <a
-              href="https://twitter.com/"
+            <a 
+              href="https://www.curseforge.com/minecraft/mc-mods/mystical-agradditions"
               target="_blank"
-              rel="noreferrer noopener">
-              Twitter
+              rel="norefferer noopener"
+            >
+              Mystical Agradditions
+            </a>
+            <a 
+              href="https://www.curseforge.com/minecraft/mc-mods/extended-crafting"
+              target="_blank"
+              rel="norefferer noopener"
+            >
+              Extended Crafting
+            </a>
+            <a 
+              href="https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture"
+              target="_blank"
+              rel="norefferer noopener"
+            >
+              Iron Jetpacks
+            </a>
+            <a 
+              href="https://www.curseforge.com/minecraft/mc-mods/pickle-tweaks"
+              target="_blank"
+              rel="norefferer noopener"
+            >
+              Pickle Tweaks
+            </a>
+            <a 
+              href="https://www.curseforge.com/minecraft/mc-mods/more-buckets"
+              target="_blank"
+              rel="norefferer noopener"
+            >
+              More Buckets
+            </a>
+            <a 
+              href="https://www.curseforge.com/minecraft/mc-mods/cucumber"
+              target="_blank"
+              rel="norefferer noopener"
+            >
+              Cucumber Library
             </a>
           </div>
           <div>
             <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
+            <a 
+              href="https://github.com/BlakeBr0"
+              target="_blank"
+              rel="norefferer noopener"
+            >
+              GitHub
+            </a>
+            <a 
+              href="https://www.curseforge.com/members/blakebr0/projects"
+              target="_blank"
+              rel="norefferer noopener"
+            >
+              CurseForge
+            </a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}
@@ -104,19 +149,6 @@ class Footer extends React.Component {
             )}
           </div>
         </section>
-
-        <a
-          href="https://opensource.facebook.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="fbOpenSource">
-          <img
-            src={`${this.props.config.baseUrl}img/oss_logo.png`}
-            alt="Facebook Open Source"
-            width="170"
-            height="45"
-          />
-        </a>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
