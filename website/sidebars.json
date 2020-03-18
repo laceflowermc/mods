@@ -6,7 +6,8 @@
         "type": "subcategory",
         "label": "Crafting Recipes",
         "ids": [
-          "mysticalagriculture/test"
+          "mysticalagriculture/infusion-recipes",
+          "mysticalagriculture/reprocessor-recipes"
         ]
       }
     ],
@@ -25,7 +26,8 @@
       "ironjetpacks"
     ],
     "Cucumber Library": [
-      "cucumberlibrary"
+      "cucumber",
+      "cucumber/tags-config"
     ]
   }
 }

@@ -1,5 +1,5 @@
 ---
-id: cucumberlibrary
+id: cucumber
 title: Cucumber Library
 sidebar_label: Introduction
 ---

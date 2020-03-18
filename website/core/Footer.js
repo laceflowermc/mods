@@ -71,7 +71,7 @@ class Footer extends React.Component {
               Extended Crafting
             </a>
             <a 
-              href="https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture"
+              href="https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks"
               target="_blank"
               rel="norefferer noopener"
             >
