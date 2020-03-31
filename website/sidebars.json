@@ -17,8 +17,19 @@
         "type": "subcategory",
         "label": "Crafting Recipes",
         "ids": [
-          "doc1",
-          "doc2"
+          "extendedcrafting/combination-recipes",
+          "extendedcrafting/table-recipes",
+          "extendedcrafting/compression-recipes",
+          "extendedcrafting/ender-crafting-recipes"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Singularities",
+        "ids": [
+          "extendedcrafting/adding-singularities",
+          "extendedcrafting/removing-singularities",
+          "extendedcrafting/singularities-in-recipes"
         ]
       }
     ],

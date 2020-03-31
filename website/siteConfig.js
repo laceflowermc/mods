@@ -39,7 +39,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { page: 'mods', label: 'Mods' },
-    { doc: 'mysticalagriculture', label: 'Documentation' },
+    { doc: 'mysticalagriculture', label: 'Docs' },
     { blog: true, label: 'Blog' },
     { href: 'https://github.com/BlakeBr0', label: 'GitHub', external: true },
     { href: 'https://www.curseforge.com/members/blakebr0/projects', label: 'CurseForge', external: true }

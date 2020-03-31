@@ -15,7 +15,7 @@ This section will go over the values available to use in an Infusion Crafting re
 - `type`: The recipe type must be `mysticalagriculture:infusion`.
 - `input`: The item that will be placed on the Infusion Altar.
 - `ingredients`: An array of 1-8 items that will be placed on the Infusion Pedestals.
-- `result`: The item that this recipe will output once finised.
+- `result`: The item that this recipe will output once finished.
 
 ## Example file
 ```json
