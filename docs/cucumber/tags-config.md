@@ -7,7 +7,7 @@ sidebar_label: Tags Config File
 ## What it does
 The `cucumber-tags.json` file added in Cucumber Library version 3.0.3 is used to configure the output item of recipes that use a tag as an output. This system is meant to allow me to make recipes that don't depend on a specific mod being present, as well as to allow pack devs to ensure these recipes give the correct item output.
 
-This system is currently used by Mystical Agriculture version 3.0.1+ and Extended Crafting 3.0.0+.
+This system is currently used by Mystical Agriculture version 3.0.1+ and Extended Crafting 2.0.0+.
 
 ## How to use it
 This file is a simple list of key-value pairs. The key being the tag and the value being the item that recipes using that tag should output. This file will automatically populate with any tags used by this system during recipe loading. If there is no entry for a tag, or the output item is `"null"`, an entry will attempt to be added for one of the items in that tag.
