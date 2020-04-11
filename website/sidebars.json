@@ -11,6 +11,41 @@
         ]
       }
     ],
+    "Mystical Customization": [
+      "mysticalcustomization",
+      {
+        "type": "subcategory",
+        "label": "Crops",
+        "ids": [
+          "mysticalcustomization/adding-crops",
+          "mysticalcustomization/editing-crops"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Crop Tiers",
+        "ids": [
+          "mysticalcustomization/adding-tiers",
+          "mysticalcustomization/editing-tiers"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Crop Types",
+        "ids": [
+          "mysticalcustomization/adding-types",
+          "mysticalcustomization/editing-types"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Mob Soul Types",
+        "ids": [
+          "mysticalcustomization/adding-mobsoultypes",
+          "mysticalcustomization/editing-mobsoultypes"
+        ]
+      }
+    ],
     "Extended Crafting": [
       "extendedcrafting",
       {

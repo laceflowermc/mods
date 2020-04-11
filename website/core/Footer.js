@@ -59,6 +59,13 @@ class Footer extends React.Component {
               Mystical Agradditions
             </a>
             <a 
+              href="https://www.curseforge.com/minecraft/mc-mods/mystical-customization"
+              target="_blank"
+              rel="norefferer noopener"
+            >
+              Mystical Customization
+            </a>
+            <a 
               href="https://www.curseforge.com/minecraft/mc-mods/extended-crafting"
               target="_blank"
               rel="norefferer noopener"
