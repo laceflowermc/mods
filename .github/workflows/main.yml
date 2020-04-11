@@ -19,7 +19,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: cd /website
+    - run: pwd
     - name: Cache node modules
       uses: actions/cache@v1
       env:
