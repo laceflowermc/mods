@@ -19,7 +19,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: pwd
+    - run: cd website
     - run: ls
     - name: Cache node modules
       uses: actions/cache@v1
