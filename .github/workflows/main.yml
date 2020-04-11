@@ -41,7 +41,7 @@ jobs:
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1.4.0
       with:
-        build_dir: /website/build/mods
+        build_dir: ./website/build/mods
       env:
         GITHUB_PAT: ${{ secrets.GH_PAT }}
 
