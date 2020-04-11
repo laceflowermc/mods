@@ -19,7 +19,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: cd website | ls
     - name: Cache node modules
       uses: actions/cache@v1
       env:
@@ -42,7 +41,7 @@ jobs:
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1.4.0
       with:
-        build_dir: /build/mods
+        build_dir: /home/runner/work/mods/mods/website/build/mods
 
      
       
