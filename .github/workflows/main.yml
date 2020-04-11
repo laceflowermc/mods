@@ -42,6 +42,8 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v1.4.0
       with:
         build_dir: /home/runner/work/mods/mods/website/build/mods
+      env:
+        GITHUB_PAT: ${{ secrets.GH_PAT }}
 
      
       
