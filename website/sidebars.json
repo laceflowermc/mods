@@ -69,7 +69,8 @@
       }
     ],
     "Iron Jetpacks": [
-      "ironjetpacks"
+      "ironjetpacks",
+      "ironjetpacks/jetpack-json"
     ],
     "Cucumber Library": [
       "cucumber",

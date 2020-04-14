@@ -61,7 +61,6 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
@@ -97,45 +96,45 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        <h2>The Mods</h2>
+        <MarkdownBlock>Here are the ways my mods can improve* your gameplay experience!</MarkdownBlock>
       </div>
     );
 
-    const TryOut = () => (
-      <Block id="try">
-        {[
-          {
-            content: 'This site is a work in progress.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
-            imageAlign: 'left',
-            title: 'Section 2',
-          },
-        ]}
-      </Block>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content: 'This site is a work in progress.',
-            image: `${baseUrl}img/undraw_note_list.svg`,
-            imageAlign: 'right',
-            title: 'Section 3',
-          },
-        ]}
-      </Block>
-    );
-
-    const LearnHow = () => (
+    const Block1 = () => (
       <Block background="light">
         {[
           {
-            content: 'This site is a work in progress.',
+            content: 'Grow all your resources using the Mystical Agriculture suite of mods!',
             image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
             imageAlign: 'right',
-            title: 'Section 1',
+            title: 'Grow Your Resources',
+          },
+        ]}
+      </Block>
+    );
+
+    const Block2 = () => (
+      <Block id="try">
+        {[
+          {
+            content: 'Create unique* gameplay experiences with pack dev tools like Iron Jetpacks and Extended Crafting!',
+            image: `${baseUrl}img/undraw_code_review.svg`,
+            imageAlign: 'left',
+            title: 'Customize Your Progression',
+          },
+        ]}
+      </Block>
+    );
+
+    const Block3 = () => (
+      <Block background="dark">
+        {[
+          {
+            content: 'Improve a few very specific situations with More Buckets, Pickle Tweaks, and Cucumber Library!',
+            image: `${baseUrl}img/undraw_note_list.svg`,
+            imageAlign: 'right',
+            title: 'Convenience Is Key',
           },
         ]}
       </Block>
@@ -195,9 +194,9 @@ class Index extends React.Component {
         <div className="mainContainer">
           <Features />
           <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
+          <Block1 />
+          <Block2 />
+          <Block3 />
           <Showcase />
         </div>
       </div>

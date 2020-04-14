@@ -36,4 +36,5 @@ pre .btnIcon:hover {
 
 .btnClipboard {
   right: 10px;
+  outline: none;
 }
