@@ -51,10 +51,6 @@ body {
   background-color: #333333;
 }
 
-.hljs {
-  background-color: #d6d3cd;
-}
-
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
