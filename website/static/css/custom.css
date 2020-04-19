@@ -6,25 +6,82 @@
  */
  
 /* your custom css */
-.mainContainer {
-  padding-bottom: 0;
+body {
+  background-color: #181a1b;
+  color: #d6d3cd;
+}
+
+.fixedHeaderContainer, .siteNavGroupActive > a, .nav-site > li > a {
+  background-color: #26292b !important;
+}
+
+.navGroupCategoryTitle, .navGroupSubcategoryTitle {
+  color: #d6d3cd !important;
+}
+
+.navigationSlider .slidingNav ul {
+  background-color: #181a1b;
+}
+
+.nav-footer {
+  background-color: #181a1b;
 }
 
 .nav-footer .sitemap {
   text-align: center;
 }
 
+.button:hover {
+  color: #181a1b;
+}
+
+.mainContainer {
+  padding-bottom: 0;
+}
+
 .docMainWrapper {
   margin-bottom: 20px;
+}
+
+.blogContainer .posts .post {
+  border-bottom: 1px solid #d6d3cd;
+}
+
+.container.darkBackground {
+  background-color: #333333;
+}
+
+.hljs {
+  background-color: #d6d3cd;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
 @media only screen and (min-width: 1024px) {
+  .onPageNav > .toc-headings {
+    border-left: 1px solid #d6d3cd;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
+  .navBreadcrumb {
+    background-color: #26292b !important;
+    color: #d6d3cd;
+    border-bottom: none;
+  }
+
+  .navBreadcrumb span {
+    color: #d6d3cd;
+  }
+
+  .hamburger-menu > div {
+    background-color: #d6d3cd;
+  }
+
+  .docsNavContainer {
+    background-color: #181a1b;
+  }
 }
 
 @media only screen and (min-width: 1400px) {

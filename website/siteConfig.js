@@ -53,9 +53,9 @@ const siteConfig = {
   // footerIcon: 'img/favicon.ico',
   favicon: 'img/favicon.ico',
 
-  /* Colors for website */
+  /* Colors for website color: text #d6d3cd background #181a1b */
   colors: {
-    primaryColor: '#333333',
+    primaryColor: '#d6d3cd',
     secondaryColor: '#666666',
   },
 

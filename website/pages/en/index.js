@@ -102,7 +102,7 @@ class Index extends React.Component {
     );
 
     const Block1 = () => (
-      <Block background="light">
+      <Block background="dark">
         {[
           {
             content: 'Grow all your resources using the Mystical Agriculture suite of mods!',
