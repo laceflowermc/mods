@@ -106,7 +106,7 @@ class Index extends React.Component {
         {[
           {
             content: 'Grow all your resources using the Mystical Agriculture suite of mods!',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            image: `${baseUrl}img/web_home_1.png`,
             imageAlign: 'right',
             title: 'Grow Your Resources',
           },
@@ -119,7 +119,7 @@ class Index extends React.Component {
         {[
           {
             content: 'Create unique* gameplay experiences with pack dev tools like Iron Jetpacks and Extended Crafting!',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+            image: `${baseUrl}img/web_home_2.png`,
             imageAlign: 'left',
             title: 'Customize Your Progression',
           },
@@ -132,7 +132,7 @@ class Index extends React.Component {
         {[
           {
             content: 'Improve a few very specific situations with More Buckets, Pickle Tweaks, and Cucumber Library!',
-            image: `${baseUrl}img/undraw_note_list.svg`,
+            image: `${baseUrl}img/web_home_3.png`,
             imageAlign: 'right',
             title: 'Convenience Is Key',
           },
