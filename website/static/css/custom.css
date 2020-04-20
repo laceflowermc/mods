@@ -24,7 +24,7 @@ body {
 }
 
 .nav-footer {
-  background-color: #181a1b;
+  background-color: #26292b;
 }
 
 .nav-footer .sitemap {
@@ -49,6 +49,10 @@ body {
 
 .container.darkBackground {
   background-color: #333333;
+}
+
+.page-wrapper {
+  padding-bottom: 40px;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {

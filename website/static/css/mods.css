@@ -1,0 +1,71 @@
+/* mods.js */
+.mod-container {
+  display: flex;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid black;
+  border-radius: 24px;
+  background-color: #333333;
+  box-shadow: inset 0 0 8px 3px #11111191;
+}
+
+.mod-container .left {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mod-container .right {
+  display: flex;
+  width: 100%;
+  padding-right: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mod-container .mod-title {
+  margin: 0 0 0 10px;
+}
+
+.mod-container .button {
+  display: block;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.mod-container .button:first-of-type {
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 470px) {
+  .mod-container .right {
+    flex-wrap: wrap;
+  }
+
+  .mod-container .button {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 379px) {
+  .mod-container .button:nth-of-type(4) {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 832px) {
+  .mod-container {
+    flex-direction: column;
+  }
+
+  .mod-container .left {
+    justify-content: center;
+  }
+
+  .mod-container .right {
+    margin-top: 20px;
+    justify-content: center;
+  }
+}

@@ -88,7 +88,10 @@ const siteConfig = {
     '/js/code-block-buttons.js',
   ],
 
-  stylesheets: ['/css/code-block-buttons.css'],
+  stylesheets: [
+    '/css/code-block-buttons.css',
+    '/css/mods.css'
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
