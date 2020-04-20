@@ -89,8 +89,7 @@ const siteConfig = {
   ],
 
   stylesheets: [
-    '/css/code-block-buttons.css',
-    '/css/mods.css'
+    '/css/code-block-buttons.css'
   ],
 
   // On page navigation for the current documentation page.
