@@ -11,6 +11,10 @@ body {
   color: #d6d3cd;
 }
 
+a {
+  color: #dd8888;
+}
+
 .fixedHeaderContainer, .siteNavGroupActive > a, .nav-site > li > a {
   background-color: #26292b !important;
 }
