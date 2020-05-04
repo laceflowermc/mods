@@ -50,12 +50,22 @@
       "extendedcrafting",
       {
         "type": "subcategory",
-        "label": "Crafting Recipes",
+        "label": "Crafting Recipes - Datapack",
         "ids": [
           "extendedcrafting/combination-recipes",
           "extendedcrafting/table-recipes",
           "extendedcrafting/compression-recipes",
           "extendedcrafting/ender-crafting-recipes"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Crafting Recipes - CraftTweaker",
+        "ids": [
+          "extendedcrafting/crafttweaker/combination-recipes",
+          "extendedcrafting/crafttweaker/table-recipes",
+          "extendedcrafting/crafttweaker/compression-recipes",
+          "extendedcrafting/crafttweaker/ender-crafting-recipes"
         ]
       },
       {

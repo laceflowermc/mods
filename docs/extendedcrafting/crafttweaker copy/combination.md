@@ -1,6 +1,6 @@
 ---
 id: combination-recipes
-title: Combination Crafting Recipes - Datapack
+title: Combination Crafting Recipes
 sidebar_label: Combination Recipes
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: compression-recipes
-title: Compression Crafting Recipes - Datapack
+title: Compression Crafting Recipes
 sidebar_label: Compression Recipes
 ---
 

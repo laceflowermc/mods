@@ -1,6 +1,6 @@
 ---
 id: table-recipes
-title: Table Crafting Recipes - Datapack
+title: Table Crafting Recipes
 sidebar_label: Table Recipes
 ---
 

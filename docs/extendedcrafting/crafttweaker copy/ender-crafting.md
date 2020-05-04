@@ -1,6 +1,6 @@
 ---
 id: ender-crafting-recipes
-title: Ender Crafting Recipes - Datapack
+title: Ender Crafting Recipes
 sidebar_label: Ender Crafting Recipes
 ---
 
