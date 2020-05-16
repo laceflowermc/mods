@@ -4,4 +4,5 @@ title: Removing Singularities
 sidebar_label: Removing Singularities
 ---
 
-This feature is not yet implemented.
+## But how?
+Just delete the singularity's file from `/config/extendedcrafting/singularities`.
