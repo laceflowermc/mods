@@ -4,10 +4,18 @@
       "mysticalagriculture",
       {
         "type": "subcategory",
-        "label": "Crafting Recipes",
+        "label": "Crafting Recipes - Datapack",
         "ids": [
           "mysticalagriculture/infusion-recipes",
           "mysticalagriculture/reprocessor-recipes"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Crafting Recipes - CraftTweaker",
+        "ids": [
+          "mysticalagriculture/crafttweaker/infusion-recipes",
+          "mysticalagriculture/crafttweaker/reprocessor-recipes"
         ]
       }
     ],
