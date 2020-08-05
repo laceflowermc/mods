@@ -117,6 +117,14 @@ You can disable this crop during the creation process if you really want to I gu
 }
 ```
 
+### Glint (v2.0.0+)
+You can enable the enchantment glint effect for this crops items.
+```json
+{
+  "glint": true
+}
+```
+
 ## Example file
 ```json
 {

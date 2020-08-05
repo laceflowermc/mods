@@ -75,6 +75,14 @@ You can disable a crop if you want to hide it.
 }
 ```
 
+### Glint (v2.0.0+)
+You can enable the enchantment glint effect for this crops items.
+```json
+{
+  "glint": true
+}
+```
+
 ## Example file
 ```json
 {
