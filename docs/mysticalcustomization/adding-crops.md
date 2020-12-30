@@ -125,6 +125,17 @@ You can enable the enchantment glint effect for this crops items.
 }
 ```
 
+### Required Biomes (v2.1.2+)
+You can specify required biomes for this crop to be able to grow in.
+```json
+{
+  "biomes": [
+    "minecraft:plains",
+    "minecraft:desert"
+  ]
+}
+```
+
 ## Example file
 ```json
 {

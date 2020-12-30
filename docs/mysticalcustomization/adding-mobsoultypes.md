@@ -58,6 +58,14 @@ You should set the color of the Soul Jar for this mob soul type. Colors are set 
 }
 ```
 
+### Enabled (v2.1.2+)
+You can disable this mob soul type during the creation process if you really want to I guess.
+```json
+{
+  "enabled": false
+}
+```
+
 ## Example file
 ```json
 {

@@ -48,6 +48,14 @@ You can change the color of the Soul Jar for a mob soul type. Colors are set usi
 }
 ```
 
+### Enabled (v2.1.2+)
+You can disable a mob soul type if you want to hide it and make it unobtainable.
+```json
+{
+  "enabled": false
+}
+```
+
 ## Example file
 ```json
 {
