@@ -155,6 +155,15 @@ How much faster the player should fly when sprinting while flying forwards.
 }
 ```
 
+### Sprint speed vertical multiplier (v4.2.0+)
+How much faster the player should fly when sprinting while flying upwards.
+```json
+{
+  "sprintSpeedMultiVertical": 2.0
+}
+```
+Omitting this field will default to `1.0`
+
 ### Sprint fuel multiplier*
 How much more fuel should the jetpack use while sprinting.
 ```json
@@ -182,6 +191,7 @@ How much more fuel should the jetpack use while sprinting.
   "speedHoverDescend": 0.45,
   "speedHover": 0.0,
   "sprintSpeedMulti": 2.0,
+  "sprintSpeedMultiVertical": 1.0,
   "sprintFuelMulti": 4.0
 }
 ```
