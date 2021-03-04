@@ -1,0 +1,16 @@
+@import "variables";
+
+:root {
+  --docs-color-primary: #{$docs-color-dark-primary};
+  --docs-color-primary-accent: #{$docs-color-dark-primary-accent};
+  --docs-color-secondary: #{$docs-color-dark-secondary};
+  --docs-color-secondary-accent: #{$docs-color-dark-secondary-accent};
+  --docs-color-text: #{$docs-color-dark-text};
+}
+
+.container {
+  max-width: $docs-container-width;
+  margin: auto;
+}
+
+

@@ -28,12 +28,12 @@
 <script lang="ts">
 import Vue from "vue";
 
-export default Vue.extend({
-  layout: "fuck"
-});
+export default Vue.extend({});
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "assets/css/variables.scss";
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
