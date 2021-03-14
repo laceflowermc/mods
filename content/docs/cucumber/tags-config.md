@@ -1,7 +1,8 @@
 ---
 id: tags-config
 title: Tags Config File
-sidebar_label: Tags Config File
+sidebarTitle: Tags Config File
+category: Cucumber
 ---
 
 ## What it does

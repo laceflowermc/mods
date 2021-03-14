@@ -1,4 +1,4 @@
-$docs-container-width: 1000px;
+$docs-container-width: 1200px;
 $docs-spacing: 30px;
 $docs-header-height: 60px;
 $docs-footer-height: 60px;
@@ -7,10 +7,12 @@ $docs-color-dark-primary: #222121;
 $docs-color-dark-primary-accent: #424348;
 $docs-color-dark-secondary: #470e0e;
 $docs-color-dark-secondary-accent: #612020;
-$docs-color-dark-text: #666666;
+$docs-color-dark-text: white;
+$docs-color-dark-search: lighten($docs-color-dark-primary, 25);
 
 $docs-color-primary: var(--docs-color-primary);
 $docs-color-primary-accent: var(--docs-color-primary-accent);
 $docs-color-secondary: var(--docs-color-secondary);
 $docs-color-secondary-accent: var(--docs-color-secondary-accent);
 $docs-color-text: var(--docs-color-text);
+$docs-color-search: var(--docs-color-search);

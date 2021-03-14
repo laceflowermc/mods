@@ -12,9 +12,9 @@
 <script lang="ts">
 import Vue from "vue";
 
-import Header from "~/components/layout/docs/Header.vue";
-import Footer from "~/components/layout/docs/Footer.vue";
-import Sidebar from "~/components/layout/docs/Sidebar.vue";
+import Header from "~/components/docs/Header.vue";
+import Footer from "~/components/docs/Footer.vue";
+import Sidebar from "~/components/docs/Sidebar.vue";
 
 export default Vue.extend({
   name: "docs",
@@ -34,6 +34,7 @@ export default Vue.extend({
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  color: $docs-color-text;
 
   .docs__body {
     display: flex;

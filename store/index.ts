@@ -1,13 +1,17 @@
 import { MutationTree } from "vuex";
 
 export const state = () => ({
-  categories: []
+  theme: "dark",
+  documents: []
 });
 
 export type RootState = ReturnType<typeof state>;
 
 export const mutations: MutationTree<RootState> = {
-  SET_CATEGORIES: (state, categories) => {
-    state.categories = categories;
+  SET_THEME: (state, theme) => {
+    state.theme = theme;
+  },
+  SET_DOCUMENTS: (state, documents) => {
+    state.documents = documents;
   }
 };

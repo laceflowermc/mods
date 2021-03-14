@@ -5,7 +5,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "mods-website",
-    titleTemplate: title => (title ? `Blake's Mods | ${title}` : title),
+    titleTemplate: title => (title ? `${title} | Blake's Mods` : title),
     htmlAttrs: {
       lang: "en"
     },
@@ -29,7 +29,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    "@nuxt/typescript-build"
+    "@nuxt/typescript-build",
+    "@nuxtjs/fontawesome"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -45,6 +46,13 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  fontawesome: {
+    icons: {
+      solid: ["faSearch", "faFire", "faArrowLeft", "faArrowRight"],
+      brands: ["faGithub"]
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
