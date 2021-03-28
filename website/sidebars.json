@@ -52,6 +52,13 @@
           "mysticalcustomization/adding-mobsoultypes",
           "mysticalcustomization/editing-mobsoultypes"
         ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Augments",
+        "ids": [
+          "mysticalcustomization/editing-augments"
+        ]
       }
     ],
     "Extended Crafting": [
