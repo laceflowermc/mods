@@ -4,8 +4,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "mods-website",
-    titleTemplate: title => (title ? `${title} | Blake's Mods` : title),
+    title: "Blake's Mods",
+    titleTemplate: title =>
+      title ? `${title} · Blake's Mods` : "Blake's Mods",
     htmlAttrs: {
       lang: "en"
     },
@@ -45,7 +46,14 @@ export default {
   axios: {},
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  content: {
+    fullTextSearchFields: ["title", "description", "slug", "text", "category"],
+    markdown: {
+      prism: {
+        theme: "prismjs/themes/prism-tomorrow.css"
+      }
+    }
+  },
 
   fontawesome: {
     icons: {
@@ -55,5 +63,14 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+
+  router: {
+    extendRoutes(router, resolve) {
+      router.push({
+        path: "/docs",
+        component: resolve(__dirname, "pages/docs/_.vue")
+      });
+    }
+  }
 };

@@ -1,48 +1,56 @@
 <template>
-  <div class="docs__pagination">
-    <nuxt-link
-      v-if="previous"
-      class="docs__pagination-left"
-      :to="previous.path"
-    >
+  <div class="pagination">
+    <nuxt-link v-if="previous" class="left" :to="previous.path">
       <font-awesome-icon :icon="['fas', 'arrow-left']" />
       {{ previous.title }}
     </nuxt-link>
-    <nuxt-link v-if="next" class="docs__pagination-right" :to="next.path">
+    <nuxt-link v-if="next" class="right" :to="next.path">
       {{ next.title }}
       <font-awesome-icon :icon="['fas', 'arrow-right']" />
     </nuxt-link>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
+<script>
+export default {
   name: "Pagination",
   props: {
     previous: Object,
     next: Object
   }
-});
+};
 </script>
 
 <style lang="scss" scoped>
 @import "assets/css/variables";
 
-.docs__pagination {
+.pagination {
   display: flex;
+  height: $docs-pagination-height;
   justify-content: space-between;
-  padding: 0 $docs-spacing $docs-spacing;
+  align-items: center;
+  padding: 0 $docs-spacing;
+  border-top: 1px solid $docs-color-primary-accent;
 
-  &-left {
-    width: 50%;
-    justify-content: flex-start;
+  .left {
+    width: 100%;
+    color: $docs-color-text;
+    padding: 10px;
+    border: 1px solid $docs-color-secondary-accent;
+
+    .fa-arrow-left {
+      margin-right: 10px;
+    }
   }
 
-  &-right {
-    width: 50%;
-    justify-content: flex-end;
+  .right {
+    width: 100%;
+    text-align: right;
+    color: $docs-color-text;
+
+    .fa-arrow-right {
+      margin-left: 10px;
+    }
   }
 }
 </style>

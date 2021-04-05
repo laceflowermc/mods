@@ -1,7 +1,8 @@
 ---
 id: reprocessor-recipes
 title: Seed Reprocessor Recipes
-sidebar_label: Seed Reprocessor Recipes
+sidebarTitle: Seed Reprocessor Recipes
+category: Mystical Agriculture
 ---
 
 Mystical Agriculture allows you easily add your own Seed Reprocessor recipes. Here's how you do it.

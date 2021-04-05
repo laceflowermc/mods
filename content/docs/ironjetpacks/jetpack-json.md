@@ -1,14 +1,14 @@
 ---
 id: jetpack-json
 title: Jetpack JSON
-sidebar_label: Jetpack JSON
+category: Iron Jetpacks
 ---
 
 ## Adding a jetpack
 Jetpacks are added via JSON files placed in `/config/ironjetpacks/jetpacks/`. Each file represents a new jetpack to be added.
 
 ## Editing a jetpack
-After initial load all of the default jetpack JSON files will be generated. You can then edit the values as you see fit.
+After initial load, all the default jetpack JSON files will be generated. You can then edit the values as you see fit.
 
 ## The jetpack file
 This section will go over the values available to use in jetpack file. Syntax can be inferred from the example json below.

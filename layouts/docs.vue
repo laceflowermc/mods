@@ -9,21 +9,19 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-
+<script>
 import Header from "~/components/docs/Header.vue";
 import Footer from "~/components/docs/Footer.vue";
 import Sidebar from "~/components/docs/Sidebar.vue";
 
-export default Vue.extend({
+export default {
   name: "docs",
   components: {
     Header,
     Footer,
     Sidebar
   }
-});
+};
 </script>
 
 <style lang="scss" scoped>

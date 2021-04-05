@@ -2,13 +2,15 @@ $docs-container-width: 1200px;
 $docs-spacing: 30px;
 $docs-header-height: 60px;
 $docs-footer-height: 60px;
+$docs-pagination-height: 60px;
 
-$docs-color-dark-primary: #222121;
-$docs-color-dark-primary-accent: #424348;
-$docs-color-dark-secondary: #470e0e;
-$docs-color-dark-secondary-accent: #612020;
+$docs-color-dark-primary: #22212D;
+$docs-color-dark-primary-accent: #3E3C5D;
+$docs-color-dark-secondary: #2B3726;
+$docs-color-dark-secondary-accent: #507243;
 $docs-color-dark-text: white;
 $docs-color-dark-search: lighten($docs-color-dark-primary, 25);
+$docs-color-dark-search-accent: lighten($docs-color-dark-primary, 50);
 
 $docs-color-primary: var(--docs-color-primary);
 $docs-color-primary-accent: var(--docs-color-primary-accent);
@@ -16,3 +18,4 @@ $docs-color-secondary: var(--docs-color-secondary);
 $docs-color-secondary-accent: var(--docs-color-secondary-accent);
 $docs-color-text: var(--docs-color-text);
 $docs-color-search: var(--docs-color-search);
+$docs-color-search-accent: var(--docs-color-search-accent);

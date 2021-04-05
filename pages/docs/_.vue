@@ -1,14 +1,14 @@
 <template>
-  <div class="docs__content">
-    <div class="docs__content-section">
+  <div class="docs">
+    <div class="content">
       <nuxt-content :document="page" />
       <Pagination :previous="previous" :next="next" />
     </div>
-    <div class="docs__toc">
-      <h3 class="docs__toc-title">On This Page</h3>
+    <div class="toc">
+      <h4 class="toc-title" v-if="!!page.toc.length">On This Page</h4>
       <div
         v-for="item in page.toc"
-        class="docs__toc-link"
+        class="toc-link"
         :class="{ 'level-2': item.depth === 2, 'level-3': item.depth === 3 }"
         :key="item.id"
       >
@@ -20,14 +20,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-import { IContentDocument } from "@nuxt/content/types/content";
-
+<script>
 import Pagination from "~/components/docs/Pagination.vue";
 
-export default Vue.extend({
-  name: "DocsPage",
+export default {
+  name: "docs",
   layout: "docs",
   components: {
     Pagination
@@ -41,19 +38,19 @@ export default Vue.extend({
   },
   async asyncData({ $content, params, error }) {
     const path = `/docs/${params.pathMatch || "index"}`;
-    const [page] = (await $content("docs", { deep: true })
+    const [page] = await $content("docs", { deep: true })
       .where({ path })
-      .fetch()) as IContentDocument[];
+      .fetch();
 
     if (!page) {
       return error({ statusCode: 404, message: "Page not found." });
     }
 
-    const [previous, next] = (await $content("docs", { deep: true })
+    const [previous, next] = await $content("docs", { deep: true })
       .only(["title", "slug"])
       .sortBy("position", "asc")
       .surround(page.path)
-      .fetch()) as [IContentDocument, IContentDocument];
+      .fetch();
 
     return {
       page,
@@ -61,16 +58,21 @@ export default Vue.extend({
       next
     };
   }
-});
+};
 </script>
 
 <style lang="scss" scoped>
 @import "assets/css/variables";
 
-.docs__content {
+.docs {
   display: flex;
+  width: 100%;
 
-  &-section {
+  .content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
     border-left: 1px solid $docs-color-primary-accent;
     border-right: 1px solid $docs-color-primary-accent;
 
@@ -86,7 +88,7 @@ export default Vue.extend({
     }
   }
 
-  .docs__toc {
+  .toc {
     position: sticky;
     flex: 0 0 220px;
     max-height: calc(

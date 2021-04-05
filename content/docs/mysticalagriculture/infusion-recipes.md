@@ -1,12 +1,12 @@
 ---
 id: infusion-recipes
-title: Infusion Crafting Recipes
-sidebar_label: Infusion Recipes
+title: Infusion Recipes
+category: Mystical Agriculture
 ---
 
 Mystical Agriculture allows you easily add your own Infusion Crafting recipes. Here's how you do it.
 
-## Prerequisits
+## Prerequisites
 - Mystical Agriculture uses the vanilla datapack system for recipe customization. [(Learn More)](https://minecraft.gamepedia.com/Data_pack)
 - Recipes are added using json files, similar to vanilla recipes. [(Learn More)](https://minecraft.gamepedia.com/Recipe)
 

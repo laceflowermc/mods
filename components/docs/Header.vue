@@ -2,13 +2,11 @@
   <header class="docs__header">
     <div class="docs__header-content">
       <nuxt-link class="docs__header-logo" to="/docs">
-        <img src="/img/logo-darkmode.png" alt="blakes mods logo" height="50" />
+        <img src="/img/logo-darkmode.png" alt="blakes mods logo" height="35" />
       </nuxt-link>
-      <div class="docs__header-search">
-        <font-awesome-icon :icon="['fas', 'search']" />
-        <input type="text" placeholder="Search..." v-model="search" />
-        <SearchResults :search="search" />
-      </div>
+
+      <Search />
+
       <div class="docs__header-icons">
         <a href="https://github.com/BlakeBr0" title="GitHub" target="_blank">
           <font-awesome-icon :icon="['fab', 'github']" />
@@ -28,17 +26,12 @@
 <script lang="ts">
 import Vue from "vue";
 
-import SearchResults from "~/components/docs/SearchResults.vue";
+import Search from "~/components/docs/Search.vue";
 
 export default Vue.extend({
   name: "Header",
   components: {
-    SearchResults
-  },
-  data() {
-    return {
-      search: ""
-    };
+    Search
   }
 });
 </script>
@@ -69,34 +62,9 @@ export default Vue.extend({
   }
 
   &-logo {
-    width: 220px;
+    min-width: 220px;
     padding-right: $docs-spacing;
-  }
-
-  &-search {
-    display: flex;
-    width: 100%;
-    position: relative;
-
-    .fa-search {
-      position: absolute;
-      top: 6px;
-      left: 10px;
-    }
-
-    input {
-      display: flex;
-      width: 100%;
-      padding: 7px 5px 7px 35px;
-      background: $docs-color-search;
-      border: none;
-      border-radius: 5px;
-      color: $docs-color-text;
-
-      &::placeholder {
-        color: $docs-color-text;
-      }
-    }
+    filter: drop-shadow(0 0 0.25em black);
   }
 
   &-icons {

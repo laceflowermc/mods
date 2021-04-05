@@ -1,14 +1,10 @@
 <template>
-  <div class="docs__sidebar">
-    <div
-      v-for="category in categories"
-      class="docs__sidebar-category"
-      :key="category"
-    >
-      <h4 class="docs__sidebar-category-title">{{ category }}</h4>
+  <div class="sidebar">
+    <div v-for="category in categories" class="category" :key="category">
+      <h4 class="category-title">{{ category }}</h4>
       <div
         v-for="document in documents[category]"
-        class="docs__sidebar-link"
+        class="link"
         :key="document.slug"
       >
         <nuxt-link :to="document.path">{{ document.title }}</nuxt-link>
@@ -17,10 +13,8 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
+<script>
+export default {
   name: "Sidebar",
   computed: {
     documents() {
@@ -30,13 +24,13 @@ export default Vue.extend({
       return Object.keys(this.$store.state.documents);
     }
   }
-});
+};
 </script>
 
 <style lang="scss" scoped>
 @import "assets/css/variables";
 
-.docs__sidebar {
+.sidebar {
   position: sticky;
   flex: 0 0 220px;
   max-height: calc(100vh - #{$docs-header-height + $docs-footer-height + 2px});
@@ -44,7 +38,9 @@ export default Vue.extend({
   padding: $docs-spacing $docs-spacing $docs-spacing 0;
   overflow-y: auto;
 
-  &-category {
+  .category {
+    margin-bottom: $docs-spacing;
+
     &-title {
       text-transform: uppercase;
       font-weight: bold;
@@ -53,7 +49,7 @@ export default Vue.extend({
     }
   }
 
-  &-link {
+  .link {
     a {
       color: white;
 

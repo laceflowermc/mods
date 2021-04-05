@@ -45,6 +45,8 @@ You must assign this crop to a tier, using the tier's ID. Learn more about tiers
 
 ### Ingredient*
 You must assign the crafting ingredient used to craft this crop's seed. This can be either an item or a tag, and uses the same syntax as a crafting recipe.
+
+**Note:** As of version 2.1.3, this field is no longer required.
 ```json
 {
   "ingredient": {

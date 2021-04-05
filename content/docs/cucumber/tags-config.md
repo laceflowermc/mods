@@ -1,7 +1,6 @@
 ---
 id: tags-config
 title: Tags Config File
-sidebarTitle: Tags Config File
 category: Cucumber
 ---
 
