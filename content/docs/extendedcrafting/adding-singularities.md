@@ -1,9 +1,10 @@
 ---
 id: adding-singularities
 title: Adding Singularities
-sidebar_label: Adding Singularities
+category: Extended Crafting
 ---
-
+this is a test
+<!--more-->
 Extended Crafting allows you easily add your own Singularities. Here's how you do it.
 
 ## What to do
@@ -15,7 +16,7 @@ This section will go over the values available to use in a Singularity json. Syn
 - `colors`: The overlay and underlay colors (in that order).
 - `ingredient`: The item this singularity is made of.
 - `materialCount`: The amount of materials required to create this singularity.
-- `inUltimateSingularity`: (**optional**) Whether or not this singularity should be a part of the Ultimate Singularity recipe. If omitted will default to `true`.
+- `inUltimateSingularity`: (**optional**) Whether this singularity should be a part of the Ultimate Singularity recipe. If omitted will default to `true`.
 
 ## Example file
 ```json

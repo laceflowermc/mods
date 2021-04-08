@@ -1,7 +1,7 @@
 ---
 id: adding-mobsoultypes
 title: Adding Mob Soul Types
-sidebar_label: Adding Mob Soul Types
+category: Mystical Customization
 ---
 
 Mystical Customization allows you easily add your own mob soul types. Here's how you do it.

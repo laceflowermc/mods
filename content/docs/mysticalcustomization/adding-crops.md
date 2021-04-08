@@ -1,7 +1,7 @@
 ---
 id: adding-crops
 title: Adding Crops
-sidebar_label: Adding Crops
+category: Mystical Customization
 ---
 
 Mystical Customization allows you easily add your own crops. Here's how you do it.

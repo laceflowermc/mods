@@ -1,0 +1,32 @@
+{
+  "redirects": [
+    {
+      "source": "/mods",
+      "destination": "/"
+    },
+    {
+      "source": "/docs/mysticalagriculture/crafttweaker/infusion-recipes",
+      "destination": "/docs/mysticalagriculture/infusion-recipes"
+    },
+    {
+      "source": "/docs/mysticalagriculture/crafttweaker/reprocessor-recipes",
+      "destination": "/docs/mysticalagriculture/reprocessor-recipes"
+    },
+    {
+      "source": "/docs/extendedcrafting/crafttweaker/combination-recipes",
+      "destination": "/docs/extendedcrafting/combination-recipes"
+    },
+    {
+      "source": "/docs/extendedcrafting/crafttweaker/table-recipes",
+      "destination": "/docs/extendedcrafting/table-recipes"
+    },
+    {
+      "source": "/docs/extendedcrafting/crafttweaker/compression-recipes",
+      "destination": "/docs/extendedcrafting/compression-recipes"
+    },
+    {
+      "source": "/docs/extendedcrafting/crafttweaker/ender-crafting-recipes",
+      "destination": "/docs/extendedcrafting/ender-crafting-recipes"
+    }
+  ]
+}

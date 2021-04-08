@@ -1,7 +1,7 @@
 ---
 id: table-recipes
-title: Table Crafting Recipes - Datapack
-sidebar_label: Table Recipes
+title: Table Recipes
+category: Extended Crafting
 ---
 
 Extended Crafting allows you easily add your own Extended Crafting Table recipes. Here's how you do it.

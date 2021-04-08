@@ -1,7 +1,7 @@
 ---
 id: compression-recipes
-title: Compression Crafting Recipes - Datapack
-sidebar_label: Compression Recipes
+title: Compression Recipes
+category: Extended Crafting
 ---
 
 Mystical Agriculture allows you easily add your own Compressor recipes. Here's how you do it.

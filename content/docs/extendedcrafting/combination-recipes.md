@@ -1,7 +1,7 @@
 ---
 id: combination-recipes
-title: Combination Crafting Recipes - Datapack
-sidebar_label: Combination Recipes
+title: Combination Recipes
+category: Extended Crafting
 ---
 
 Extended Crafting allows you easily add your own Combination Crafting recipes. Here's how you do it.

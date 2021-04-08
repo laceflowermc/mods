@@ -1,7 +1,7 @@
 ---
 id: ender-crafting-recipes
-title: Ender Crafting Recipes - Datapack
-sidebar_label: Ender Crafting Recipes
+title: Ender Recipes
+category: Extended Crafting
 ---
 
 Extended Crafting allows you easily add your own Ender Crafting recipes. Here's how you do it.

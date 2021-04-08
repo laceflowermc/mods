@@ -1,7 +1,7 @@
 ---
 id: adding-types
 title: Adding Crop Types
-sidebar_label: Adding Crop Types
+category: Mystical Customization
 ---
 
 Mystical Customization allows you easily add your own crop types. Here's how you do it.

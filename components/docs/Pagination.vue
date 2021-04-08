@@ -1,10 +1,14 @@
 <template>
   <div class="pagination">
-    <nuxt-link v-if="previous" class="left" :to="previous.path">
+    <nuxt-link
+      v-if="previous && previous.category"
+      class="left"
+      :to="previous.path"
+    >
       <font-awesome-icon :icon="['fas', 'arrow-left']" />
       {{ previous.title }}
     </nuxt-link>
-    <nuxt-link v-if="next" class="right" :to="next.path">
+    <nuxt-link v-if="next && next.category" class="right" :to="next.path">
       {{ next.title }}
       <font-awesome-icon :icon="['fas', 'arrow-right']" />
     </nuxt-link>

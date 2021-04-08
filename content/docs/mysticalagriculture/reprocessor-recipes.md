@@ -1,7 +1,6 @@
 ---
 id: reprocessor-recipes
-title: Seed Reprocessor Recipes
-sidebarTitle: Seed Reprocessor Recipes
+title: Reprocessor Recipes
 category: Mystical Agriculture
 ---
 

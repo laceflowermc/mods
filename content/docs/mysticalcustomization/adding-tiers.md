@@ -1,7 +1,7 @@
 ---
 id: adding-tiers
 title: Adding Crop Tiers
-sidebar_label: Adding Crop Tiers
+category: Mystical Customization
 ---
 
 Mystical Customization allows you easily add your own crop tiers. Here's how you do it.

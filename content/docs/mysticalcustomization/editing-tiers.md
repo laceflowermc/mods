@@ -1,7 +1,7 @@
 ---
 id: editing-tiers
 title: Editing Crop Tiers
-sidebar_label: Editing Crop Tiers
+category: Mystical Customization
 ---
 
 Mystical Customization allows you easily edit registered crop tiers. Here's how you do it.

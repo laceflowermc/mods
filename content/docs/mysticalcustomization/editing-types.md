@@ -1,7 +1,7 @@
 ---
 id: editing-types
 title: Editing Crop Types
-sidebar_label: Editing Crop Types
+category: Mystical Customization
 ---
 
 Mystical Customization allows you easily edit registered crop types. Here's how you do it.

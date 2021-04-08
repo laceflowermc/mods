@@ -1,7 +1,7 @@
 ---
 id: editing-mobsoultypes
 title: Editing Mob Soul Types
-sidebar_label: Editing Mob Soul Types
+category: Mystical Customization
 ---
 
 Mystical Customization allows you easily edit registered mob soul types. Here's how you do it.

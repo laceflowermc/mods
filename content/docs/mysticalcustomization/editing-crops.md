@@ -1,7 +1,7 @@
 ---
 id: editing-crops
 title: Editing Crops
-sidebar_label: Editing Crops
+category: Mystical Customization
 ---
 Mystical Customization allows you easily edit registered crops. Here's how you do it.
 

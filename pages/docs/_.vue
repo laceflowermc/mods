@@ -29,6 +29,20 @@ export default {
   components: {
     Pagination
   },
+  head() {
+    return {
+      title: this.page.category
+        ? `${this.page.title} · ${this.page.category}`
+        : this.page.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.page.description
+        }
+      ]
+    };
+  },
   data() {
     return {
       page: {},
@@ -47,7 +61,7 @@ export default {
     }
 
     const [previous, next] = await $content("docs", { deep: true })
-      .only(["title", "slug"])
+      .only(["title", "slug", "category"])
       .sortBy("position", "asc")
       .surround(page.path)
       .fetch();
@@ -83,6 +97,46 @@ export default {
       &::v-deep .nuxt-content {
         * {
           margin-bottom: 15px;
+        }
+
+        a {
+          color: $docs-color-secondary;
+
+          &:hover {
+            color: $docs-color-secondary-accent;
+          }
+        }
+
+        h2,
+        h3 {
+          .icon-link {
+            position: absolute;
+            opacity: 0;
+            margin-left: -20px;
+            padding-right: 10px;
+            color: $docs-color-secondary;
+
+            &::before {
+              content: "#";
+            }
+
+            &:hover {
+              color: $docs-color-secondary-accent;
+            }
+          }
+
+          &:hover {
+            .icon-link {
+              opacity: 1;
+            }
+          }
+        }
+
+        :target::before {
+          content: "";
+          display: block;
+          height: $docs-header-height;
+          margin: -$docs-header-height 0 0;
         }
       }
     }
