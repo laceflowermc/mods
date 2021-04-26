@@ -1,3 +1,22 @@
+//
+// DEFAULT LAYOUT VARIABLES
+//
+
+$default-container-width: 1200px;
+$default-header-height: 75px;
+
+$default-color-light-background: #f7f7f7;
+$default-color-light-header: #333;
+$default-color-light-footer: $default-color-light-background;
+
+$default-color-background: var(--default-color-background);
+$default-color-header: var(--default-color-header);
+$default-color-footer: var(--default-color-footer);
+
+//
+// DOCS LAYOUT VARIABLES
+//
+
 $docs-container-width: 1200px;
 $docs-spacing: 30px;
 $docs-header-height: 60px;

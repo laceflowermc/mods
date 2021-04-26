@@ -4,7 +4,6 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Blake's Mods",
     titleTemplate: title =>
       title ? `${title} · Blake's Mods` : "Blake's Mods",
     htmlAttrs: {
@@ -62,13 +61,21 @@ export default {
 
   fontawesome: {
     icons: {
-      solid: ["faSearch", "faArrowLeft", "faArrowRight"],
+      solid: ["faSearch", "faArrowLeft", "faArrowRight", "faDownload"],
       brands: ["faGithub"]
     }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  hooks: {
+    "content:file:beforeParse": file => {
+      if (file.path.endsWith("/index")) {
+        file.path = file.path.slice(-6) || "/";
+      }
+    }
+  },
 
   router: {
     extendRoutes(router, resolve) {

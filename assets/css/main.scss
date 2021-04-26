@@ -1,6 +1,10 @@
 @import "variables";
 
 :root {
+  --default-color-background: #{$default-color-light-background};
+  --default-color-header: #{$default-color-light-header};
+  --default-color-footer: #{$default-color-light-footer};
+
   --docs-color-primary: #{$docs-color-dark-primary};
   --docs-color-primary-accent: #{$docs-color-dark-primary-accent};
   --docs-color-secondary: #{$docs-color-dark-secondary};
@@ -56,5 +60,4 @@ html, body {
 a {
   text-decoration: none;
 }
-
 
