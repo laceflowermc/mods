@@ -1,9 +1,16 @@
 @import "variables";
 
-:root {
-  --default-color-background: #{$default-color-light-background};
-  --default-color-header: #{$default-color-light-header};
-  --default-color-footer: #{$default-color-light-footer};
+body {
+  --default-color-primary: #{$default-color-dark-primary};
+  --default-color-primary-accent: #{$default-color-dark-primary-accent};
+  --default-color-secondary: #{$default-color-dark-secondary};
+  --default-color-secondary-accent: #{$default-color-dark-secondary-accent};
+  --default-color-background: #{$default-color-dark-background};
+  --default-color-card: #{$default-color-dark-card};
+  --default-color-card-accent: #{$default-color-dark-card-accent};
+  --default-color-gradient: #{$default-color-dark-gradient};
+  --default-color-header: #{$default-color-dark-header};
+  --default-color-text: #{$default-color-dark-text};
 
   --docs-color-primary: #{$docs-color-dark-primary};
   --docs-color-primary-accent: #{$docs-color-dark-primary-accent};
@@ -23,11 +30,11 @@
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('~assets/font/Poppins-Regular.ttf') format('truetype');
+  src: url('~assets/font/Rubik-Regular.ttf') format('truetype');
 }
 
 html, body {

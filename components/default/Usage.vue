@@ -21,6 +21,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "assets/css/variables";
+
 #usage {
   display: flex;
   width: 100%;
@@ -34,9 +36,10 @@ export default {
   .counters {
     display: flex;
     height: 200px;
-    border: 1px solid lightgray;
+    border: 1px solid $default-color-card-accent;
     border-radius: 16px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+    background-color: $default-color-card;
+    box-shadow: $default-card-shadow;
 
     .left,
     .right {

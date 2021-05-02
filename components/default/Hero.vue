@@ -3,6 +3,9 @@
     <div class="left">
       <h1 class="title">Blake's Mods</h1>
       <h2 class="subtitle">The home of BlakeBr0's Minecraft mods</h2>
+      <button class="cta" type="button" @click="onClickCTA">
+        Check 'em out!
+      </button>
     </div>
     <div class="right">
       <Carousel
@@ -13,9 +16,15 @@
         :autoplay-timeout="5000"
         :pagination-enabled="false"
       >
-        <Slide> <img src="https://via.placeholder.com/600x300" /> </Slide>
-        <Slide> <img src="https://via.placeholder.com/600x300" /> </Slide>
-        <Slide> <img src="https://via.placeholder.com/600x300" /> </Slide>
+        <Slide>
+          <img src="/img/web_home_1.png" width="600" height="300" alt="" />
+        </Slide>
+        <Slide>
+          <img src="/img/web_home_2.png" width="600" height="300" alt="" />
+        </Slide>
+        <Slide>
+          <img src="/img/web_home_3.png" width="600" height="300" alt="" />
+        </Slide>
       </Carousel>
     </div>
   </div>
@@ -30,6 +39,11 @@ export default {
   components: {
     Carousel,
     Slide
+  },
+  methods: {
+    onClickCTA() {
+      document.getElementById("mods").scrollIntoView({ behavior: "smooth" });
+    }
   }
 };
 </script>
@@ -54,6 +68,23 @@ export default {
     .subtitle {
       font-size: 1.5em;
     }
+
+    .cta {
+      padding: 10px 30px;
+      margin-top: 25px;
+      color: white;
+      background-color: $default-color-secondary;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.25s;
+
+      &:hover {
+        background-color: $default-color-secondary-accent;
+      }
+    }
   }
 
   .right {
@@ -61,7 +92,6 @@ export default {
 
     .carousel {
       height: 300px;
-      border: 1px solid lightgray;
       border-radius: 16px;
       box-shadow: rgba(0, 0, 0, 0.15) 0 2px 12px;
       overflow: hidden;

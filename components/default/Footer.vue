@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer id="footer">
     <div class="content">
       <div class="left">
         <span class="copyright">
@@ -20,12 +20,10 @@ export default {
 <style lang="scss" scoped>
 @import "assets/css/variables";
 
-.footer {
+#footer {
   display: block;
-  background-color: $default-color-footer;
   font-family: Lato, "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
 
   .content {
     display: flex;

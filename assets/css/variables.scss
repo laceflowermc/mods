@@ -4,14 +4,34 @@
 
 $default-container-width: 1200px;
 $default-header-height: 75px;
+$default-header-height-compact: 50px;
+$default-card-shadow: rgba(0, 0, 0, 0.30) 0 2px 8px;
+
+$default-color-dark-primary: #333;
+$default-color-dark-primary-accent: lighten($default-color-dark-primary, 10%);
+$default-color-dark-secondary: #50a530;
+$default-color-dark-secondary-accent: lighten($default-color-dark-secondary, 10%);
+$default-color-dark-background: $default-color-dark-primary;
+$default-color-dark-card: lighten($default-color-dark-primary, 10%);
+$default-color-dark-card-accent: #efefef;
+$default-color-dark-gradient: darken($default-color-dark-primary, 10%);
+$default-color-dark-header: darken($default-color-dark-primary, 10%);
+$default-color-dark-text: #efefef;
 
 $default-color-light-background: #f7f7f7;
-$default-color-light-header: #333;
-$default-color-light-footer: $default-color-light-background;
+$default-color-light-gradient: #e1eaf8;
+$default-color-light-header: #082253;
 
+$default-color-primary: var(--default-color-primary);
+$default-color-primary-accent: var(--default-color-primary-accent);
+$default-color-secondary: var(--default-color-secondary);
+$default-color-secondary-accent: var(--default-color-secondary-accent);
 $default-color-background: var(--default-color-background);
+$default-color-card: var(--default-color-card);
+$default-color-card-accent: var(--default-color-card-accent);
+$default-color-gradient: var(--default-color-gradient);
 $default-color-header: var(--default-color-header);
-$default-color-footer: var(--default-color-footer);
+$default-color-text: var(--default-color-text);
 
 //
 // DOCS LAYOUT VARIABLES

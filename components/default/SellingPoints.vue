@@ -28,6 +28,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "assets/css/variables";
+
 #selling-points {
   display: flex;
   width: 100%;
@@ -47,12 +49,14 @@ export default {
     .right {
       display: flex;
       height: 300px;
+      padding: 30px;
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      border: 1px solid lightgray;
+      border: 1px solid $default-color-card-accent;
       border-radius: 16px;
-      box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+      background-color: $default-color-card;
+      box-shadow: $default-card-shadow;
 
       .title {
         font-size: 20px;

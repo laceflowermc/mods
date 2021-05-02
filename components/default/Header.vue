@@ -67,26 +67,24 @@ export default {
   height: $default-header-height;
   top: 0;
   z-index: 100;
-  background-color: $default-color-background;
   font-family: Lato, "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   transition: 0.5s;
 
   &.scrolled {
-    height: #{$default-header-height / 2};
+    height: #{$default-header-height-compact};
     background-color: $default-color-header;
 
     .content {
       .left {
         img {
-          filter: drop-shadow(0 0 0.25em gray);
           height: 25px;
         }
       }
 
       .right {
         a {
-          color: white;
+          font-weight: initial;
         }
       }
     }
@@ -103,7 +101,7 @@ export default {
 
     .left {
       img {
-        filter: invert(1) drop-shadow(0 0 0.25em gray);
+        filter: drop-shadow(0 0 0.25em gray);
         transition: 0.5s;
       }
     }
@@ -111,11 +109,12 @@ export default {
     .right {
       display: flex;
       margin: 0 -10px;
-      vertical-align: center;
+      line-height: 2;
+      font-weight: bold;
 
       a {
         margin: 0 10px;
-        color: black;
+        color: $default-color-text;
         transition: 0.5s;
       }
     }

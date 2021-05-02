@@ -159,6 +159,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
+        <font-awesome-icon :icon="['fas', 'download']" />
         Download Cucumber Library
       </a>
     </div>
@@ -172,10 +173,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "assets/css/variables";
+
 #mods {
   display: flex;
+  position: relative;
   width: 100%;
   flex-direction: column;
+  scroll-margin-top: 75px;
 
   .title {
     margin-bottom: 30px;
@@ -195,9 +200,10 @@ export default {
       flex-direction: column;
       text-align: center;
       padding: 0 20px;
-      border: 1px solid lightgray;
+      border: 1px solid $default-color-card-accent;
       border-radius: 16px;
-      box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+      background-color: $default-color-card;
+      box-shadow: $default-card-shadow;
 
       .logo {
         display: flex;
@@ -206,12 +212,14 @@ export default {
         height: 125px;
         margin: 0 auto -30px auto;
         top: -45px;
-        background-color: lightgray;
+        background-color: $default-color-card;
+        border: 1px solid $default-color-card-accent;
         border-radius: 16px;
-        box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+        box-shadow: $default-card-shadow;
       }
 
       .name {
+        margin-bottom: 10px;
         font-size: 20px;
         font-weight: bold;
       }
@@ -221,6 +229,13 @@ export default {
 
         a {
           margin: 0 10px;
+          color: $default-color-secondary;
+          filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.95));
+          transition: 0.25s;
+
+          &:hover {
+            color: $default-color-secondary-accent;
+          }
         }
       }
     }
@@ -233,12 +248,17 @@ export default {
     margin-top: 30px;
 
     a {
-      display: flex;
-      padding: 5px 15px;
+      padding: 10px 30px;
       margin-top: 10px;
       color: white;
-      background-color: #50a530;
+      background-color: $default-color-secondary;
       border-radius: 8px;
+      box-shadow: $default-card-shadow;
+      transition: 0.25s;
+
+      &:hover {
+        background-color: $default-color-secondary-accent;
+      }
     }
   }
 }
