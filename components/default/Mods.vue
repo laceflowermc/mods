@@ -188,17 +188,19 @@ export default {
   }
 
   .cards {
-    display: grid;
-    margin-top: 50px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 80px;
-    grid-column-gap: 30px;
+    display: flex;
+    margin: 10px -15px -30px -15px;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .card {
       display: flex;
+      width: 100%;
       height: 300px;
+      max-width: 380px;
       flex-direction: column;
       text-align: center;
+      margin: 40px 15px;
       padding: 0 20px;
       border: 1px solid $default-color-card-accent;
       border-radius: 16px;
@@ -243,13 +245,14 @@ export default {
 
   .cucumber {
     display: flex;
+    margin-top: 30px;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    text-align: center;
 
     a {
       padding: 10px 30px;
-      margin-top: 10px;
+      margin-top: 20px;
       color: white;
       background-color: $default-color-secondary;
       border-radius: 8px;

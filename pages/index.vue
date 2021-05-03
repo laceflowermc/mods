@@ -29,12 +29,17 @@ export default {
 
 .container {
   display: flex;
-  width: $default-container-width;
+  max-width: $default-container-width + 40px;
   margin: 0 auto;
+  padding: 0 20px;
   flex-direction: column;
 
   & > * {
     margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
   }
 }
 </style>

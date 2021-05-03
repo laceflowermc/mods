@@ -27,10 +27,10 @@ export default {
 
   .content {
     display: flex;
-    width: $default-container-width;
+    max-width: $default-container-width + 40px;
     height: 100%;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 30px 20px;
     flex: 1 1 auto;
     align-items: center;
   }

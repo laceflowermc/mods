@@ -41,14 +41,17 @@ export default {
   }
 
   .points {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    margin: -15px;
+    flex-wrap: nowrap;
 
     .left,
     .right {
       display: flex;
-      height: 300px;
+      width: 100%;
+      height: 250px;
+      max-width: 585px;
+      margin: 15px;
       padding: 30px;
       flex-direction: column;
       justify-content: center;
@@ -62,6 +65,12 @@ export default {
         font-size: 20px;
         font-weight: bold;
       }
+    }
+
+    @media screen and (max-width: 750px) {
+      margin: -15px 0;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

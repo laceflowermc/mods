@@ -61,7 +61,13 @@ export default {
 
   fontawesome: {
     icons: {
-      solid: ["faSearch", "faArrowLeft", "faArrowRight", "faDownload"],
+      solid: [
+        "faSearch",
+        "faArrowLeft",
+        "faArrowRight",
+        "faDownload",
+        "faBars"
+      ],
       brands: ["faGithub"]
     }
   },

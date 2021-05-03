@@ -1,5 +1,5 @@
 <template>
-  <header class="header" :class="{ scrolled }">
+  <header class="header" :class="{ scrolled, mobile }">
     <div class="content">
       <div class="left">
         <nuxt-link class="logo" to="/">
@@ -10,7 +10,7 @@
           />
         </nuxt-link>
       </div>
-      <div class="right">
+      <div class="right" :class="{ active: menu }">
         <nuxt-link to="/docs">Docs</nuxt-link>
         <nuxt-link to="/guides">Guides</nuxt-link>
         <nuxt-link to="/blog">Blog</nuxt-link>
@@ -32,6 +32,11 @@
           CurseForge
         </a>
       </div>
+      <font-awesome-icon
+        v-if="mobile"
+        :icon="['fas', 'bars']"
+        @click="menu = !menu"
+      />
     </div>
   </header>
 </template>
@@ -41,7 +46,9 @@ export default {
   name: "Header",
   data() {
     return {
-      scrolled: false
+      scrolled: false,
+      mobile: false,
+      menu: false
     };
   },
   mounted() {
@@ -49,10 +56,22 @@ export default {
       this.scrolled = window.scrollY > 60;
     };
 
+    this._onResizeWindow = () => {
+      this.mobile = window.innerWidth <= 600;
+
+      if (!this.mobile) {
+        this.menu = false;
+      }
+    };
+
     window.addEventListener("scroll", this._onScrollWindow);
+    window.addEventListener("resize", this._onResizeWindow);
+
+    this._onResizeWindow();
   },
   destroyed() {
     window.removeEventListener("scroll", this._onScrollWindow);
+    window.removeEventListener("resize", this._onResizeWindow);
   }
 };
 </script>
@@ -71,30 +90,12 @@ export default {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   transition: 0.5s;
 
-  &.scrolled {
-    height: #{$default-header-height-compact};
-    background-color: $default-color-header;
-
-    .content {
-      .left {
-        img {
-          height: 25px;
-        }
-      }
-
-      .right {
-        a {
-          font-weight: initial;
-        }
-      }
-    }
-  }
-
   .content {
     display: flex;
-    width: $default-container-width;
+    max-width: $default-container-width + 40px;
     height: 100%;
     margin: 0 auto;
+    padding: 0 20px;
     flex: 1 1 auto;
     justify-content: space-between;
     align-items: center;
@@ -116,6 +117,55 @@ export default {
         margin: 0 10px;
         color: $default-color-text;
         transition: 0.5s;
+      }
+    }
+
+    .fa-bars {
+      font-size: 24px;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  &.scrolled,
+  &.mobile {
+    height: $default-header-height-compact;
+    background-color: $default-color-header;
+
+    .content {
+      .left {
+        img {
+          height: 25px;
+        }
+      }
+
+      .right {
+        a {
+          font-weight: initial;
+        }
+      }
+    }
+  }
+
+  &.mobile {
+    .content {
+      .right {
+        display: none;
+        box-shadow: $default-card-shadow;
+
+        &.active {
+          display: flex;
+          position: absolute;
+          width: 200px;
+          top: 50px;
+          right: 0;
+          flex-direction: column;
+          background-color: $default-color-header;
+        }
+
+        a {
+          font-weight: bold;
+        }
       }
     }
   }

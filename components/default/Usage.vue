@@ -54,6 +54,20 @@ export default {
         font-weight: bold;
       }
     }
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+      justify-content: center;
+
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        margin-bottom: 30px;
+      }
+    }
   }
 }
 </style>

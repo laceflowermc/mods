@@ -85,6 +85,10 @@ export default {
         background-color: $default-color-secondary-accent;
       }
     }
+
+    @media screen and (max-width: 1240px) {
+      width: 100%;
+    }
   }
 
   .right {
@@ -95,6 +99,10 @@ export default {
       border-radius: 16px;
       box-shadow: rgba(0, 0, 0, 0.15) 0 2px 12px;
       overflow: hidden;
+    }
+
+    @media screen and (max-width: 1240px) {
+      display: none;
     }
   }
 }
