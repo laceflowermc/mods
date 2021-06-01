@@ -8,13 +8,13 @@ Extended Crafting allows you easily add your own Ender Crafting recipes using Cr
 
 ## Adding a shaped recipe
 ```java
-mods.extendedcrafting.EnderCrafting.addShaped(name, <output>, [[<>, <>, <>], [<>, <>, <>], [<>, <>, <>]], seconds);  
+mods.extendedcrafting.EnderCrafting.addShaped(name, <output>, [[<>, <>, <>], [<>, <>, <>], [<>, <>, <>]], ticks);  
 ```
 
 - `name`: A unique name for this recipe. Must be all lower case and have no spaces.
 - `output`: The output item for this recipe.
 - `<>`: An input ingredient for the slot shown.
-- `seconds`: (**optional**) The amount of seconds this recipe should take. If this parameter isn't added, it will use the default rate defined in the config file.
+- `ticks`: (**optional**) The amount of ticks this recipe should take. If this parameter isn't added, it will use the default rate defined in the config file.
 
 The input arrays work in the same way as the normal crafting recipes, check out the CraftTweaker wiki for more information.
 
@@ -27,13 +27,13 @@ mods.extendedcrafting.EnderCrafting.addShapeless("test_shapeless", <item:minecra
 
 ## Adding a shapeless recipe
 ```java
-mods.extendedcrafting.EnderCrafting.addShapeless(name, <output>, [inputs], seconds); 
+mods.extendedcrafting.EnderCrafting.addShapeless(name, <output>, [inputs], ticks); 
 ```
 
 - `name`: A unique name for this recipe. Must be all lower case and have no spaces.
 - `output`: The output item for this recipe.
 - `inputs`: An array of 1-9 items required to make the recipe.
-- `seconds`: (**optional**) The amount of seconds this recipe should take. If this parameter isn't added, it will use the default rate defined in the config file.
+- `ticks`: (**optional**) The amount of ticks this recipe should take. If this parameter isn't added, it will use the default rate defined in the config file.
 
 ### Example
 ```java
